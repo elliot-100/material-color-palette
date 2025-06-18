@@ -1,19 +1,23 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import TYPE_CHECKING, ClassVar
+from typing import TYPE_CHECKING, ClassVar, TypeVar
 
 if TYPE_CHECKING:
     from collections.abc import Mapping
 
+T1 = TypeVar("T1")
+T2 = TypeVar("T2")
+RGB = tuple[int, int, int]
 
-def str_of_mapping_keys(mapping: Mapping) -> str:
+
+def str_of_mapping_keys(mapping: Mapping[T1, T2]) -> str:
     return str(list(mapping.keys()))
 
 
 @dataclass
 class Color:
-    COLORS: ClassVar[dict[str, dict[int | str, tuple[int, int, int]]]] = {
+    COLORS: ClassVar[dict[str, dict[int | str, RGB]]] = {
         "red": {
             50: (255, 235, 238),
             100: (255, 205, 210),
@@ -309,7 +313,8 @@ class Color:
         "black": {},
         "white": {},
     }
-    rgb: tuple[int, int, int]
+
+    rgb: RGB
 
     def __init__(self, name: str, shade: int | str | None = None) -> None:
         if name == "black":
