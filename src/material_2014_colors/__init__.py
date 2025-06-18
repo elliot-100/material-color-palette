@@ -1,13 +1,15 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import TYPE_CHECKING, Any, ClassVar
+from typing import TYPE_CHECKING, Any, ClassVar, TypeVar
 
 if TYPE_CHECKING:
     from collections.abc import Mapping
 
+T = TypeVar("T")
 
-def str_of_mapping_keys(mapping: Mapping) -> str:
+
+def str_of_mapping_keys(mapping: Mapping[T, T]) -> str:
     return str(list(mapping.keys()))
 
 
