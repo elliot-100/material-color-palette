@@ -32,5 +32,9 @@ jobs:
         # Exit with error if the code is not properly formatted
         run: uv run ruff format --check --diff
 
+      - name: Check linting with ruff
+        # Exit with error if the code has issues
+        run: uv run ruff check --output-format github
+
       - name: Check typing
         run: uv run mypy .
