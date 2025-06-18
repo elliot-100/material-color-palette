@@ -22,13 +22,15 @@ jobs:
           version: "0.7.13"
           python-version: ${{ matrix.python-version }}
 
-      - name: Install the project
-        run: uv sync --locked
+      - name: Install the project and locked dependencies
+        run: uv sync --locked  # Includes `dev` group by default
 
       - name: Run tests
         run: uv run pytest .
 
       - name: Check format with ruff
-        # Uses ruff version in `pyproject.toml`
         # Exit with error if the code is not properly formatted
         run: uv run ruff format --check --diff
+
+      - name: Check typing
+        run: uv run mypy .
