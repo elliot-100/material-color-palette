@@ -7,6 +7,10 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 
 ## DEV - tbc
 
+### Added
+
+-  `Color` `name`, `shade` attributes
+
 ### Changed
 
 - Revised public API: non-public items prefixed with underscore 
