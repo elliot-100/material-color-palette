@@ -1,3 +1,5 @@
+"""The tests module."""
+
 import pytest
 
 from material_2014_colors import Color

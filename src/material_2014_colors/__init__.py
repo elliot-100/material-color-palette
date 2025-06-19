@@ -1,3 +1,5 @@
+"""The main package."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -11,12 +13,14 @@ T2 = TypeVar("T2")
 RGB = tuple[int, int, int]
 
 
-def str_of_mapping_keys(mapping: Mapping[T1, T2]) -> str:
+def _str_of_mapping_keys(mapping: Mapping[T1, T2]) -> str:
     return str(list(mapping.keys()))
 
 
 @dataclass
 class Color:
+    """Represents a colour/colour."""
+
     COLORS: ClassVar[dict[str, dict[int | str, RGB]]] = {
         "red": {
             50: (255, 235, 238),
@@ -317,6 +321,7 @@ class Color:
     rgb: RGB
 
     def __init__(self, name: str, shade: int | str | None = None) -> None:
+        """Initialize a color from `name` and `shade` values."""
         if name == "black":
             self.rgb = 0, 0, 0
 
@@ -326,7 +331,7 @@ class Color:
         elif name not in self.COLORS:
             err_msg = (
                 f"'{name}' isn't a valid Material color name. "
-                f"Allowed values: {str_of_mapping_keys(self.COLORS)}."
+                f"Allowed values: {_str_of_mapping_keys(self.COLORS)}."
             )
             raise ValueError(err_msg)
 
@@ -345,7 +350,7 @@ class Color:
             else:
                 err_msg = (
                     f"'{shade}' isn't a valid shade for Material color '{name}'. "
-                    f"Allowed values: {str_of_mapping_keys(self.COLORS[name])}."
+                    f"Allowed values: {_str_of_mapping_keys(self.COLORS[name])}."
                 )
                 raise ValueError(err_msg)
 
