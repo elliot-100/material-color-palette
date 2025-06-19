@@ -1,6 +1,6 @@
 import pytest
 
-from src.material_2014_colors import Color
+from material_2014_colors import Color
 
 
 def test_construct_color() -> None:
