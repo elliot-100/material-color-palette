@@ -318,6 +318,10 @@ def _str_of_mapping_keys(mapping: Mapping[_T1, _T2]) -> str:
 class Color:
     """Represents a color."""
 
+    name: str
+    """The name of the color."""
+    shade: int | str | None
+    """The shade of the color."""
     rgb: _RGB
     """The color as an `(r, g, b)` tuple, each value an integer in the range
     0 to 255 inclusive."""
@@ -338,9 +342,11 @@ class Color:
                 if `shade` isn't valid for the given color `name`.
         """
         if name == "black":
+            self.shade = None
             self.rgb = 0, 0, 0
 
         elif name == "white":
+            self.shade = None
             self.rgb = 255, 255, 255
 
         elif name not in _COLORS:
@@ -360,6 +366,7 @@ class Color:
                 and shade.isdigit()
                 and int(shade) in _COLORS[name]
             ):
+                self.shade = int(shade)
                 self.rgb = _COLORS[name][int(shade)]
 
             else:
@@ -371,3 +378,6 @@ class Color:
 
         else:
             self.rgb = _COLORS[name][shade]
+            self.shade = shade
+
+        self.name = name

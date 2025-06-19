@@ -12,6 +12,8 @@ def test_construct_color() -> None:
     c = Color("red", "700")
     # assert
     assert c.rgb == (211, 47, 47)
+    assert c.name == "red"
+    assert c.shade == 700
 
 
 def test_construct_color__int_shade() -> None:
@@ -21,6 +23,8 @@ def test_construct_color__int_shade() -> None:
     c = Color("pink", 900)
     # assert
     assert c.rgb == (136, 14, 79)
+    assert c.name == "pink"
+    assert c.shade == 900
 
 
 def test_construct_color__color_only() -> None:
@@ -31,7 +35,11 @@ def test_construct_color__color_only() -> None:
     c1 = Color("white")
     # assert
     assert c0.rgb == (0, 0, 0)
+    assert c0.name == "black"
+    assert c0.shade is None
     assert c1.rgb == (255, 255, 255)
+    assert c1.name == "white"
+    assert c1.shade is None
 
 
 def test_construct_color__missing_shade_raises_exception() -> None:
