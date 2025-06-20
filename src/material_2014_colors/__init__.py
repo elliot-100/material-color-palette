@@ -338,7 +338,7 @@ class Color:
         Raises:
             ValueError:
                 if `name` isn't a valid color;
-                if `name` isn't 'black' or 'white', and `shade` isn't specified;
+                if `shade` isn't specified, and `name` isn't 'black' or 'white';
                 if `shade` isn't valid for the given color `name`.
         """
         if name == "black":
@@ -381,3 +381,18 @@ class Color:
             self.shade = shade
 
         self.name = name
+
+    @property
+    def r(self) -> int:
+        """Get the red component as an integer in the range 0 to 255 inclusive."""
+        return self.rgb[0]
+
+    @property
+    def g(self) -> int:
+        """Get the green component as an integer in the range 0 to 255 inclusive."""
+        return self.rgb[1]
+
+    @property
+    def b(self) -> int:
+        """Get the blue component as an integer in the range 0 to 255 inclusive."""
+        return self.rgb[2]

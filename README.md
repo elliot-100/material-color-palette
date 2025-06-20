@@ -27,8 +27,12 @@ pip install git+https://github.com/elliot-100/material-2014-colors.git@v0.1.0
 
 ```pycon
 > from material_2014_colors import Color
-> COLOR_0 = Color("red", 700)
-> COLOR_0.rgb
+> FOREGROUND = Color("red", 700)
+> FOREGROUND
+Color(name='red', shade=700, rgb=(211, 47, 47))
+
+# Use RGB triplet representation in e.g. pygame/pygame-ce:
+> FOREGROUND.rgb
 (211, 47, 47)
 
 # Accent colours use the original notation, so shade value is a string  
