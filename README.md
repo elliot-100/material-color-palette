@@ -35,6 +35,14 @@ Color(name='red', shade=700, rgb=(211, 47, 47))
 > FOREGROUND.rgb
 (211, 47, 47)
 
+# Use hex string representation in e.g. Matplotlib:
+> FOREGROUND.hex
+'#d32f2f'
+
+# r, g, b properties should cover any other need:
+> f"r={FOREGROUND.r/255}, g={FOREGROUND.g/255}, b={FOREGROUND.b/255}, a=1.0"
+'r=0.8274509803921568, g=0.1843137254901961, b=0.1843137254901961, a=1.0'
+
 # Accent colours use the original notation, so shade value is a string  
 > COLOR_1 = Color("pink", "a100")
 
