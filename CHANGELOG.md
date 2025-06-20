@@ -9,7 +9,7 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 
 ### Added
 
--  `Color` `name`, `shade` attributes
+-  `Color` `name`, `shade` attributes; `r`, `g`, `b` properties 
 
 ### Changed
 
