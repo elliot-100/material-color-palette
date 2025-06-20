@@ -316,14 +316,14 @@ def _str_of_mapping_keys(mapping: Mapping[_T1, _T2]) -> str:
 
 @dataclass
 class Color:
-    """Represents a colour/colour."""
+    """Represents a color."""
 
     rgb: _RGB
     """The color as an `(r, g, b)` tuple, each value an integer in the range
     0 to 255 inclusive."""
 
     def __init__(self, name: str, shade: int | str | None = None) -> None:
-        """Initialize a color/colour from `name` and `shade` values.
+        """Initialize a color from `name` and `shade` values.
 
         Args:
             name: A valid color name.

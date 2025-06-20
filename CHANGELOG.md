@@ -9,7 +9,7 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 
 ### Changed
 
-- Revised public API
+- Revised public API: non-public items prefixed with underscore 
 
 ## [0.1.1] - 2025-06-20
 
