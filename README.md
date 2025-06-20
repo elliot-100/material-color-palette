@@ -71,3 +71,18 @@ Traceback (most recent call last):
 ValueError: 'a200' isn't a valid shade for Material color 'gray'. Allowed values: 50,
 100, 200, 300, 400, 500, 600, 700, 800, 900.
 ```
+
+### With other libraries
+
+#### pygame/pygame-ce
+
+`pygame.Color` is inherently RGBA, but you can initialize with RGB, and the alpha
+component defaults to 255 (no transparency): 
+
+```pycon
+> from material_2014_colors import Color as MaterialColor
+> from pygame import Color
+
+> COLOR_0 = Color(MaterialColor("blue_gray", 400).rgb)
+> COLOR_0
+(120, 144, 156, 255)
