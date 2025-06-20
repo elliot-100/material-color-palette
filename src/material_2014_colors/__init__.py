@@ -396,3 +396,8 @@ class Color:
     def b(self) -> int:
         """Get the blue component as an integer in the range 0 to 255 inclusive."""
         return self.rgb[2]
+
+    @property
+    def hex(self) -> str:
+        """Get a hex string representation."""
+        return f"#{self.r:02x}{self.g:02x}{self.b:02x}"
