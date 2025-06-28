@@ -71,6 +71,32 @@ Traceback (most recent call last):
 ValueError: 'a200' isn't a valid shade for Material color 'gray'. Allowed values: 50,
 100, 200, 300, 400, 500, 600, 700, 800, 900.
 ```
+### pygame examples
+
+```python
+import pygame as pg
+import material_2014_colors as mc
+
+ABSTRACT_COLOR = mc.Color("green", 500)
+RGB_VALUE = mc.Color("amber", 500).rgb
+PYGAME_COLOR = pg.Color(mc.Color("teal", 300).rgb)
+
+pg.init()
+window = pg.display.set_mode((600, 400))
+running = True
+
+while running:
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
+            running=False
+
+    window.fill(ABSTRACT_COLOR.rgb)
+    pg.draw.circle(window, RGB_VALUE, (150, 150), 100)
+    pg.draw.circle(window, PYGAME_COLOR, (300, 150), 100)
+    pg.display.flip()
+
+pg.quit()
+```
 
 ### With other libraries
 
