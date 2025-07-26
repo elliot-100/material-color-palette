@@ -6,11 +6,10 @@ from dataclasses import dataclass
 from typing import TYPE_CHECKING, TypeVar
 
 if TYPE_CHECKING:
-    from collections.abc import Mapping
+    from collections.abc import Iterable
 
-_T1 = TypeVar("_T1")
-_T2 = TypeVar("_T2")
 _RGB = tuple[int, int, int]
+_T = TypeVar("_T")
 
 _COLORS: dict[str, dict[int | str, _RGB]] = {
     "red": {
@@ -310,8 +309,25 @@ _COLORS: dict[str, dict[int | str, _RGB]] = {
 }
 
 
-def _str_of_mapping_keys(mapping: Mapping[_T1, _T2]) -> str:
-    return str(list(mapping.keys()))
+def _names() -> list[str]:
+    """Return sorted valid name values."""
+    return sorted(_COLORS.keys())
+
+
+def _shades(color_name: str) -> list[int | str]:
+    """Return valid shade values for `color_name`."""
+    return list(_COLORS[color_name].keys())
+
+
+def _quote_if_str(value: _T) -> str:
+    """Return string of `value`, quoted if a string."""
+    return f"'{value}'" if isinstance(value, str) else str(value)
+
+
+def _string_of_iterable_members(iterable: Iterable[int | str]) -> str:
+    """Return string representation of `iterable` members."""
+    member_strings = [_quote_if_str(value) for value in iterable]
+    return ", ".join(member_strings)
 
 
 @dataclass
@@ -350,9 +366,10 @@ class Color:
             self.rgb = 255, 255, 255
 
         elif name not in _COLORS:
+            valid_names = _names()
             err_msg = (
-                f"'{name}' isn't a valid Material color name. "
-                f"Allowed values: {_str_of_mapping_keys(_COLORS)}."
+                f"{_quote_if_str(name)} isn't a valid Material color name. "
+                f"Allowed values: {_string_of_iterable_members(valid_names)}."
             )
             raise ValueError(err_msg)
 
@@ -370,9 +387,11 @@ class Color:
                 self.rgb = _COLORS[name][int(shade)]
 
             else:
+                valid_shades = _shades(name)
                 err_msg = (
-                    f"'{shade}' isn't a valid shade for Material color '{name}'. "
-                    f"Allowed values: {_str_of_mapping_keys(_COLORS[name])}."
+                    f"{_quote_if_str(shade)} isn't a valid shade "
+                    f"for Material color '{name}'. "
+                    f"Allowed values: {_string_of_iterable_members(valid_shades)}."
                 )
                 raise ValueError(err_msg)
 

@@ -53,10 +53,10 @@ Color(name='red', shade=700, rgb=(211, 47, 47))
 >>> COLOR_3 = Color("lime_green") 
 Traceback (most recent call last):
 ...
-ValueError: 'lime_green' isn't a valid Material color name. Allowed values: ['red', 
-'pink', 'purple', 'deep_purple', 'indigo', 'blue', 'light_blue', 'cyan', 'teal', 
-'green', 'light_green', 'lime', 'yellow', 'amber', 'orange', 'deep_orange', 'brown', 
-'gray', 'blue_gray', 'black', 'white'].
+ValueError: 'lime_green' isn't a valid Material color name. Allowed values: 'amber', 
+'black', 'blue', 'blue_gray', 'brown', 'cyan', 'deep_orange', 'deep_purple', 'gray',
+'green', 'indigo', 'light_blue', 'light_green', 'lime', 'orange', 'pink', 'purple',
+'red', 'teal', 'white', 'yellow'.
 
 >>> COLOR_3 = Color("lime")
 Traceback (most recent call last):
@@ -66,8 +66,8 @@ ValueError: Shade must be specified for Material color 'lime'.
 >>> COLOR_3 = Color("yellow", 950)
 Traceback (most recent call last):
 ...
-ValueError: '950' isn't a valid shade for Material color 'yellow'. Allowed values: [50, 
-100, 200, 300, 400, 500, 600, 700, 800, 900, 'a100', 'a200', 'a400', 'a700']
+ValueError: '950' isn't a valid shade for Material color 'yellow'. Allowed values: 50, 
+100, 200, 300, 400, 500, 600, 700, 800, 900, 'a100', 'a200', 'a400', 'a700'.
 
 >>> COLOR_3 = Color("gray", 950)
 Traceback (most recent call last):
