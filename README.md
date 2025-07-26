@@ -53,10 +53,11 @@ Color(name='red', shade=700, rgb=(211, 47, 47))
 >>> COLOR_3 = Color("lime_green") 
 Traceback (most recent call last):
 ...
-ValueError: 'lime_green' isn't a valid Material color name. Allowed values: 'amber', 
-'black', 'blue', 'blue_gray', 'brown', 'cyan', 'deep_orange', 'deep_purple', 'gray',
-'green', 'indigo', 'light_blue', 'light_green', 'lime', 'orange', 'pink', 'purple',
-'red', 'teal', 'white', 'yellow'.
+ValueError: 'lime_green' isn't a valid Material color name. Allowed values: 'amber',
+'black', 'blue', 'blue gray', 'blue_gray', 'brown', 'cyan', 'deep orange', 'deep purple',
+'deep_orange', 'deep_purple', 'gray', 'green', 'indigo', 'light blue', 'light green',
+'light_blue', 'light_green', 'lime', 'orange', 'pink', 'purple', 'red', 'teal', 'white',
+'yellow'.
 
 >>> COLOR_3 = Color("lime")
 Traceback (most recent call last):

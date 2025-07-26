@@ -29,6 +29,17 @@ def test_construct_color__int_shade() -> None:
     assert c.hex == "#880e4f"
 
 
+def test_construct_color__spaces_in_name() -> None:
+    """`Color` can be constructed from `name` including spaces."""
+    # arrange
+    # act
+    c0 = Color("deep purple", 300)
+    c1 = Color("deep_purple", 300)
+
+    # assert
+    assert c0 == c1
+
+
 def test_construct_color__color_only() -> None:
     """`Color` can be constructed from `name` alone for some values."""
     # arrange
