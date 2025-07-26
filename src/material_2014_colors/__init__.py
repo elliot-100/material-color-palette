@@ -307,11 +307,18 @@ _COLORS: dict[str, dict[int | str, _RGB]] = {
     "black": {},
     "white": {},
 }
+_COLOR_NAME_ALIASES = {
+    "deep purple": "deep_purple",
+    "light blue": "light_blue",
+    "light green": "light_green",
+    "deep orange": "deep_orange",
+    "blue gray": "blue_gray",
+}
 
 
 def _names() -> list[str]:
     """Return sorted valid name values."""
-    return sorted(_COLORS.keys())
+    return sorted(_COLORS.keys() | _COLOR_NAME_ALIASES.keys())
 
 
 def _shades(color_name: str) -> list[int | str]:
@@ -357,6 +364,7 @@ class Color:
                 if `shade` isn't specified, and `name` isn't 'black' or 'white';
                 if `shade` isn't valid for the given color `name`.
         """
+        name = _COLOR_NAME_ALIASES.get(name, name)
         if name == "black":
             self.shade = None
             self.rgb = 0, 0, 0
