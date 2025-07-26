@@ -10,14 +10,15 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 
 ### Added
 
--  Error messages: better formatting, sort color names
+- Error messages: better formatting, sort color names
+- Docs: bring README up to date, simplify
 
 
 ## [0.2.0] - 2025-06-20
 
 ### Added
 
--  `Color` `name`, `shade` attributes; `hex`, `r`, `g`, `b` properties 
+-  `Color.name`, `shade` attributes; `hex`, `r`, `g`, `b` properties 
 
 ### Changed
 
