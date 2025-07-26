@@ -10,6 +10,7 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 
 ### Added
 
+- Allow space instead of underscore when constructing `Color` with two-word name.
 - Error messages: better formatting, sort color names
 - Docs: bring README up to date, simplify
 
