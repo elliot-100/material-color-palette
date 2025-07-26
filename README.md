@@ -14,13 +14,13 @@ Fully type-hinted and with a test suite.
 Not yet available on PyPI, so install from GitHub, e.g.:
 
 ```sh
-pip install git+https://github.com/elliot-100/material-2014-colors.git
+pip install git+https://github.com/elliot-100/material-2014-colors
 ```
 
 I recommend installing a specific version, e.g.:
 
 ```sh
-pip install git+https://github.com/elliot-100/material-2014-colors.git@v0.1.0
+pip install git+https://github.com/elliot-100/material-2014-colors@v0.2.0
 ```
 
 ## Usage
