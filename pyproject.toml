@@ -1,6 +1,6 @@
 [project]
 name = "material-color-palette"
-version = "0.4.0"
+version = "1.0.0b1"
 description = "Google's original 2014 Material Design color palettes as a Python library"
 readme = "README.md"
 authors = [
