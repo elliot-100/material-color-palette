@@ -1,4 +1,4 @@
-# material-2014-colors
+# material-color-palette
 
 Google's original [2014 Material Design color palettes](https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors)
 as a Python library package.
@@ -14,19 +14,19 @@ Fully type-hinted and with a test suite.
 Not yet available on PyPI, so install from GitHub, e.g.:
 
 ```sh
-pip install git+https://github.com/elliot-100/material-2014-colors
+pip install git+https://github.com/elliot-100/material-color-palette
 ```
 
 I recommend installing a specific version, e.g.:
 
 ```sh
-pip install git+https://github.com/elliot-100/material-2014-colors@v0.2.0
+pip install git+https://github.com/elliot-100/material-color-palette@v0.3.0
 ```
 
 ## Usage
 
 ```pycon
->>> from material_2014_colors import Color
+>>> from material_color_palette import Color
 >>> MY_COLOR = Color("red", 700)
 >>> MY_COLOR
 Color(name='red', shade=700, rgb=(211, 47, 47))

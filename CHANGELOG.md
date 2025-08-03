@@ -6,11 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project tries to adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## UNRELEASED - tbc
+
+### Changed
+
+- Rename project and package from `material-2014-colors` to `material-color-palette`
+
+
 ## [0.3.0] - 2025-07-26
 
 ### Added
 
-- Allow space instead of underscore when constructing `Color` with two-word name.
+- Allow space instead of underscore when constructing `Color` with two-word name
 - Error messages: better formatting, sort color names
 - Docs: bring README up to date, simplify
 

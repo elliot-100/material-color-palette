@@ -2,7 +2,7 @@
 
 import pytest
 
-from material_2014_colors import Color
+from material_color_palette import Color
 
 
 def test_construct_color() -> None:
