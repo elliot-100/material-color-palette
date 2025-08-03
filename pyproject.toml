@@ -7,6 +7,14 @@ authors = [
     { name = "elliot-100", email = "3186037+elliot-100@users.noreply.github.com" }
 ]
 requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["google", "material", "design", "color", "colors", "colour", "colours", "palette", "palettes"]
+
+[project.urls]
+source = "https://github.com/elliot-100/material-color-palette"
+changelog = "https://github.com/elliot-100/material-color-palette/blob/main/CHANGELOG.md"
+issues = "https://github.com/elliot-100/material-color-palette/issues"
 
 [build-system]
 requires = ["hatchling"]

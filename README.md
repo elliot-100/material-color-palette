@@ -11,16 +11,10 @@ Fully type-hinted and with a test suite.
 
 ## Installation
 
-Not yet available on PyPI, so install from GitHub, e.g.:
+Install from PyPI, e.g.:
 
 ```sh
-pip install git+https://github.com/elliot-100/material-color-palette
-```
-
-I recommend installing a specific version, e.g.:
-
-```sh
-pip install git+https://github.com/elliot-100/material-color-palette@v0.3.0
+pip install material-color-palette
 ```
 
 ## Usage
