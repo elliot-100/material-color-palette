@@ -7,6 +7,19 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 
 Pre-release versions aren't necessarily included.
 
+
+## UNRELEASED - tbc
+
+### Added
+
+- CI: set up Dependabot
+
+### Changed
+
+- Refactor: remove unnecessary TypeVar
+- Update CI, dev dependencies
+
+
 ## [1.0.0] - 2025-08-25
 
 ### Added
