@@ -3,13 +3,12 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import TYPE_CHECKING, TypeVar
+from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from collections.abc import Iterable
 
 _RGB = tuple[int, int, int]
-_T = TypeVar("_T")
 
 _COLORS: dict[str, dict[int | str, _RGB]] = {
     "red": {
@@ -326,7 +325,7 @@ def _shades(color_name: str) -> list[int | str]:
     return list(_COLORS[color_name].keys())
 
 
-def _quote_if_str(value: _T) -> str:
+def _quote_if_str(value: int | str) -> str:
     """Return string of `value`, quoted if a string."""
     return f"'{value}'" if isinstance(value, str) else str(value)
 
