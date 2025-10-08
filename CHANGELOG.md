@@ -12,7 +12,7 @@ Pre-release versions aren't necessarily included.
 
 ### Added
 
-- CI: set up Dependabot
+- CI: add Python 3.14, set up Dependabot
 
 ### Changed
 
