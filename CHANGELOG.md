@@ -8,7 +8,7 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 Pre-release versions aren't necessarily included.
 
 
-## UNRELEASED - tbc
+## [1.1.0] - 2025-01-08
 
 ### Added
 
