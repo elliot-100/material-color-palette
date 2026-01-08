@@ -13,6 +13,7 @@ Pre-release versions aren't necessarily included.
 ### Added
 
 - CI: add Python 3.14, set up Dependabot
+- tests: 'r'-prefix raw strings when matching exceptions
 
 ### Changed
 

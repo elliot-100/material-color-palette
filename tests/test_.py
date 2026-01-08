@@ -62,7 +62,7 @@ def test_construct_color__missing_shade_raises_exception() -> None:
     # arrange
     # act, assert
     with pytest.raises(
-        ValueError, match="Shade must be specified for Material color 'lime'."
+        ValueError, match=r"Shade must be specified for Material color 'lime'."
     ):
         Color("lime")
 
@@ -72,7 +72,7 @@ def test_construct_color__incorrect_name_raises_exception() -> None:
     # arrange
     # act, assert
     with pytest.raises(
-        ValueError, match="'dark_blue' isn't a valid Material color name."
+        ValueError, match=r"'dark_blue' isn't a valid Material color name."
     ):
         Color("dark_blue", "300")
 
@@ -82,6 +82,6 @@ def test_construct_color__incorrect_shade_raises_exception() -> None:
     # arrange
     # act, assert
     with pytest.raises(
-        ValueError, match="'250' isn't a valid shade for Material color 'blue_gray'."
+        ValueError, match=r"'250' isn't a valid shade for Material color 'blue_gray'."
     ):
         Color("blue_gray", "250")
