@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "elliot-100", email = "3186037+elliot-100@users.noreply.github.com" }
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "MIT"
 license-files = ["LICENSE"]
 keywords = ["google", "material", "design", "color", "colors", "colour", "colours", "palette", "palettes"]
@@ -22,9 +22,9 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
-    "mypy>=1.17.1",
-    "pytest>=8.4.1",
-    "ruff>=0.12.10",
+    "mypy>=1.19.1",
+    "pytest>=9.0.2",
+    "ruff>=0.14.10",
 ]
 
 [tool.mypy]
