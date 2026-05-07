@@ -52,6 +52,7 @@ show_error_codes = true
 pretty = true
 
 [tool.ruff.lint]
+future-annotations = true
 select = ["ALL"]
 ignore = [
     # Rules that conflict with Ruff formatter:
