@@ -51,6 +51,10 @@ warn_unreachable = true
 show_error_codes = true
 pretty = true
 
+[[tool.mypy.overrides]]
+module = ["PIL.*"] # Only used in `extras/` outside distributed package, which handles own dependencies, so can't be checked
+ignore_missing_imports = true
+
 [tool.ruff.lint]
 future-annotations = true
 select = ["ALL"]
