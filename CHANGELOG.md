@@ -12,9 +12,14 @@ Pre-release versions aren't necessarily included.
 
 ### Added
 
-- feat: add `extras/palette_image.py` script to generate palette image
+- `extras/palette_image.py` script to generate palette image
+- Docs: improve README.md
 - CI: add permissions to GitHub workflow
-- docs: improve README.md
+
+### Changed
+
+- CI: don't typecheck `extras/` as they are not part of distributed package
+  and have separate Python/dependencies
 
 
 ## [1.1.0.post1] - 2026-02-23
