@@ -13,7 +13,7 @@ Pre-release versions aren't necessarily included.
 ### Added
 
 - `extras/palette_image.py` script to generate palette image
-- Docs: improve README.md
+- Docs: improve README.md and include palette image
 - CI: add permissions to GitHub workflow
 
 ### Changed
