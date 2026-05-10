@@ -2,10 +2,14 @@
 
 Google's original 2014 Material Design color palettes as a Python library package.
 
+![Image showing all shades of all colors.](docs-assets/palette.png "Palette image")
+_Image showing all shades of all colors._
+_Generated with `extras/palette_image.py`_
+
 [Original source](https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors)
 (scroll down to *2014 Material Design color palettes* and expand).
 
-Because I wanted to use the palettes in some of my projects, but didn't want to
+Because I wanted to use the palette in my projects, but didn't want to
 copy-paste values, and couldn't find an existing implementation that was simple
 and complete.
 
