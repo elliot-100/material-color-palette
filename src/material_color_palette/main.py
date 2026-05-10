@@ -325,15 +325,15 @@ def _shades(color_name: str) -> list[int | str]:
     return list(_COLORS[color_name].keys())
 
 
-def _quote_if_str(value: int | str) -> str:
-    """Return string of `value`, quoted if a string."""
-    return f"'{value}'" if isinstance(value, str) else str(value)
-
-
 def _string_of_iterable_members(iterable: Iterable[int | str]) -> str:
     """Return string representation of `iterable` members."""
     member_strings = [_quote_if_str(value) for value in iterable]
     return ", ".join(member_strings)
+
+
+def _quote_if_str(value: int | str) -> str:
+    """Return string of `value`, quoted if a string."""
+    return f"'{value}'" if isinstance(value, str) else str(value)
 
 
 @dataclass

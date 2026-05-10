@@ -8,11 +8,20 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 Pre-release versions aren't necessarily included.
 
 
+## UNRELEASED - tbc
+
+### Added
+
+- feat: add `extras/palette_image.py` script to generate palette image
+- CI: add permissions to GitHub workflow
+- docs: improve README.md
+
+
 ## [1.1.0.post1] - 2026-02-23
 
-### Changed
+### Added
 
-- improve metadata for PyPI
+- improved metadata for PyPI
 
 
 ## [1.1.0] - 2026-01-08
