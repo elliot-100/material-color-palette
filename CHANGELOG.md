@@ -8,6 +8,13 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 Pre-release versions aren't necessarily included.
 
 
+## [1.1.0.post3] - 2026-05-26
+
+### Fixed
+
+- Docs: link to palette image in ReADME.md
+
+
 ## [1.1.0.post2] - 2026-05-26
 
 ### Added
@@ -103,6 +110,7 @@ Pre-release versions aren't necessarily included.
 Initial release
 
 
+[1.1.0.post3]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0.post2...v1.1.0.post3
 [1.1.0.post2]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0.post1...v1.1.0.post2
 [1.1.0.post1]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0...v1.1.0.post1
 [1.1.0]: https://github.com/elliot-100/material-color-palette/compare/v1.0.0...v1.1.0
