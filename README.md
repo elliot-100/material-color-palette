@@ -2,7 +2,7 @@
 
 Google's original 2014 Material Design color palettes as a Python library package.
 
-![Image showing all shades of all colors.](docs-assets/palette.png "Palette image")
+![Image showing all shades of all colors.](https://github.com/elliot-100/material-color-palette/blob/fbb369654e94f8f03899b0da53a2cd99f13d3ff0/docs-assets/palette.png?raw=True "Palette image")
 _Image showing all shades of all colors._
 _Generated with `extras/palette_image.py`_
 
