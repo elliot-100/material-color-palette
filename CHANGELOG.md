@@ -8,14 +8,14 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 Pre-release versions aren't necessarily included.
 
 
-## [1.1.0.post3] - 2026-05-26
+## [1.1.0.post3] - 2026-05-25
 
 ### Fixed
 
-- Docs: link to palette image in ReADME.md
+- Docs: link to palette image in README.md
 
 
-## [1.1.0.post2] - 2026-05-26
+## [1.1.0.post2] - 2026-05-25
 
 ### Added
 
