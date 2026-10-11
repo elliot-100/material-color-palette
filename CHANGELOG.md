@@ -8,6 +8,21 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 Pre-release versions aren't necessarily included.
 
 
+## [1.2.0] - 2026-10-11
+
+### Added
+
+- Support Python 3.15
+
+### Changed
+
+- Update CI, dev dependencies and pin exact versions
+
+### Fixed
+
+- Docs: link to palette image in README.md
+
+
 ## [1.1.0.post3] - 2026-05-25
 
 ### Fixed
@@ -40,7 +55,7 @@ Pre-release versions aren't necessarily included.
 
 ### Added
 
-- CI: add Python 3.14, set up Dependabot
+- CI: add Python 3.14 to matrix, set up Dependabot
 - tests: 'r'-prefix raw strings when matching exceptions
 
 ### Changed
@@ -110,6 +125,7 @@ Pre-release versions aren't necessarily included.
 Initial release
 
 
+[1.1.1]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0.post3...v1.1.1
 [1.1.0.post3]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0.post2...v1.1.0.post3
 [1.1.0.post2]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0.post1...v1.1.0.post2
 [1.1.0.post1]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0...v1.1.0.post1

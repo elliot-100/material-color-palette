@@ -40,7 +40,7 @@ Color(name='red', shade=700, rgb=(211, 47, 47))
 '#d32f2f'
 
 # r, g, b properties should cover any other need:
->>> f"r={MY_COLOR.r/255}, g={MY_COLOR.g/255}, b={MY_COLOR.b/255}, a=1.0"
+>>> f"r={MY_COLOR.r / 255}, g={MY_COLOR.g / 255}, b={MY_COLOR.b / 255}, a=1.0"
 'r=0.8274509803921568, g=0.1843137254901961, b=0.1843137254901961, a=1.0'
 
 # Accent colours use the original notation, so shade value is a string  
@@ -50,7 +50,7 @@ Color(name='red', shade=700, rgb=(211, 47, 47))
 >>> Color("teal", "100")
 
 # Useful, contextual error messages:
->>> Color("lime_green") 
+>>> Color("lime_green")
 Traceback (most recent call last):
 ...
 ValueError: 'lime_green' isn't a valid Material color name. Allowed values: 'amber',
