@@ -13,7 +13,8 @@ Because I wanted to use the palette in my projects, but didn't want to
 copy-paste values, and couldn't find an existing implementation that was simple
 and complete.
 
-Fully type-hinted and with a test suite.
+No external dependencies; fully type-hinted and with a test suite.
+
 
 ## Installation
 
