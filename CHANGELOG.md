@@ -8,6 +8,21 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 Pre-release versions aren't necessarily included.
 
 
+## [1.3.0] - 2026-11-19
+
+### Added
+
+- Trusted publishing to PyPI
+
+### Changed
+
+- Update CI, dev dependencies and switch resolution mode to 'lowest-direct'
+
+### Fixed
+
+- Docs: broken links to diff for v1.2.0
+
+
 ## [1.2.0] - 2026-10-11
 
 ### Added
@@ -125,7 +140,8 @@ Pre-release versions aren't necessarily included.
 Initial release
 
 
-[1.1.1]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0.post3...v1.1.1
+[1.3.0]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0...v1.3.0
+[1.2.0]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0...v1.2.0
 [1.1.0.post3]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0.post2...v1.1.0.post3
 [1.1.0.post2]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0.post1...v1.1.0.post2
 [1.1.0.post1]: https://github.com/elliot-100/material-color-palette/compare/v1.1.0...v1.1.0.post1
