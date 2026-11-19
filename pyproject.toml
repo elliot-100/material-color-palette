@@ -75,3 +75,7 @@ ignore = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.uv]
+resolution = "lowest-direct"
+exclude-newer = "7 days"
